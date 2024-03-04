@@ -64,7 +64,7 @@ class Sistema:
             print("------------------------------------------")
             print("El paciente no se encuentra en el sistema.")
             print("------------------------------------------")
-
+            
     def verNumeroPacientes(self):
         print("----------------------------")
         print("En el sistema hay: " + str(len(self.__lista_pacientes)) + " pacientes") 
@@ -116,7 +116,7 @@ def main():
             cedula = int(input("Ingrese la cedula a buscar: "))
             datos_pac = sis.verDatosPaciente(cedula)
             print(datos_pac)
-
+                    
         elif opcion == 3:
             sis.verNumeroPacientes()
             
@@ -127,6 +127,9 @@ def main():
             break
         
         else:
+            print("---------------------------")
+            print("Ingresó una opción inválida")
+            print("---------------------------")
             break 
 
 # Aca el python descubre cual es la función principal
